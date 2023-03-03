@@ -76,7 +76,7 @@
     border-radius: 20px;
 }
 
-.input-wrapper i {
+.input-wrapper .fa-search {
     position: absolute;
     width: 35px;
     height: 35px;

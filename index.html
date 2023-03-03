@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
-    <script src="main.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -59,24 +58,24 @@
 
                     <div class="number-game-wrapper">
                         <div class="input-wrapper">
-                            <input type="number" class="h-text input" placeholder="Введіть рік народження">
-                            <i class="fa-search"></i>
+                            <input id="birth" type="number" class="h-text input" placeholder="Введіть рік народження">
+                            <i class="fa-search" id="birth-search"></i>
                         </div>
-                        <p class="h-text">Введіть рік народження, щоб побачити</p>
+                        <p class="h-text" id="birth-text">Введіть рік народження, щоб побачити</p>
                     </div>
 
                     <hr class="line">
                 </div>
                 
                 <div class="number-game">
-                    <h2 class="second-title">Вгадай число, яке загадав комп’ютер</h2>
+                    <h2 class="second-title">Вгадай число, яке загадав комп’ютер до 10</h2>
                     
                     <div class="number-game-wrapper">
                         <div class="number-input-wrapper">
-                            <input type="number" class="h-text number-input" placeholder="Введіть число">
-                            <i class="fa-search"></i>
+                            <input type="number" class="h-text number-input" id="number-input" placeholder="Введіть число">
+                            <i class="fa-search" id="number-search"></i>
                         </div>
-                        <p class="h-text">Введіть число, щоб побачити</p>
+                        <p class="h-text" id="number-text">Введіть число, щоб побачити</p>
                     </div>
                     
                     <hr class="line">
@@ -159,5 +158,10 @@
         
         <footer>
         </footer>
+
+
+
+        <script src="./js/task1.js"></script>
+        <script src="./js/task2.js"></script>
 </body>
 </html>

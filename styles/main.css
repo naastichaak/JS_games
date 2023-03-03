@@ -1,0 +1,220 @@
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.main-wrapper {
+    background-color: var(--white);
+    width: 1090px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    margin-top: 36px;
+    font-family: var(--montserrat);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.22;
+}
+
+.line {
+    margin-top: 36px;
+    width: 536px;
+    border: 0.5px solid var(--black);
+
+}
+
+/* year game */
+.number-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.second-title {
+    margin-top: 36px;
+    font-family: var(--montserrat);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.22;
+}
+
+.number-game-wrapper {
+    margin-top: 36px;
+    display: flex;
+    width: 576px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input {
+    border: 0px;
+    width: 215px;
+    height: 35px;
+    padding-left: 10px;
+    background-color: var(--light-grey);
+    color: var(--dark-grey);
+    border-radius: 20px;
+}
+
+.input-wrapper {
+    width: 215px;
+    height: 35px;
+    position: relative;
+}
+
+.fa-search {
+    background: url(../images/loop.svg) no-repeat;
+}
+
+.input-wrapper .input {
+    width: 215px;
+    height: 35px;
+    padding: 10px 45px 10px 10px;
+    border-radius: 20px;
+}
+
+.input-wrapper i {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    right: 0;
+}
+
+/* random number game */
+.number-input {
+    width: 150px;
+    height: 35px;
+    padding-left: 10px;
+    background-color: var(--light-grey);
+    color: var(--dark-grey);
+    border-radius: 20px;
+}
+
+.number-input-wrapper{
+    width: 150px;
+    height: 35px;
+    position: relative;
+}
+
+.number-input-wrapper .number-input {
+    width: 150px;
+    height: 35px;
+    padding: 10px 45px 10px 10px;
+    border-radius: 20px;
+}
+
+.number-input-wrapper i {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    right: 0;
+}
+
+/* rock-scissors-paper */
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icons-scores {
+    margin-top: 36px;
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons {
+    margin-left: 197px;
+    width: 256px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-wrapper {
+    width: 60px;
+    height: 60px;
+    background-color: var(--black);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#result {
+    margin: 36px 0px;
+}
+
+.btn {
+    width: 182px;
+    height: 35px;
+    background-color: var(--black);
+    border-radius: 20px;
+    color: var(--white);
+}
+
+/* calculator */
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.math {
+    margin-top: 36px;
+    width: 629px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signs {
+    width: 62px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sign-wrapper:first-child {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.sign-wrapper:nth-child(3) {
+    margin-bottom: 10px;
+}
+
+.sign-wrapper:nth-child(3) {
+    margin-right: 10px;
+}
+
+.sign-wrapper {
+    background-color: var(--black);
+    /* color: var(--white); */
+    border-radius: 20px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+    /* vertical-align: middle; */
+}
+
+.sign {
+    color: var(--white);
+}
+
+#first-num,
+#second-num {
+    width: 135px;
+    text-align: center;
+}
+
+#result {
+    width: 118px;
+    text-align: center;
+}

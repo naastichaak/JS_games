@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-wrapper">
+
+            <a href="#" class="logo">
+                <img src="./images/logo.png" alt="logo">
+            </a>
+
+            <nav class="nav">
+                <select id="choose" name="choose" class="choose">
+                    <option value="1" class="nav-item">Інтерактив</option>
+                    <option value="2" class="nav-item">Числовий</option>
+                    <option value="3" class="nav-item">Ігровий</option>
+                    <option value="4" class="nav-item">Ознайомчий</option>
+                </select>
+
+                <h3 id="about" class="h-text">Про мене</h3>
+
+                <h3 id="contacts" class="h-text">Контакти</h3>
+            </nav>
+
+            <div class="dark-mode">
+                <label class="switch">
+                    <input type="checkbox" class="checkbox" id="checkbox">
+                    <span class="slider round"></span>
+                </label>
+
+                <p class="h-text">Вітаємо, 
+                    <span id="user" class="h-text"></span>!
+                </p>
+
+            </div>
+        </div>
+    </header>
+    
+    <div class="back-wrapper">
+        <main class="main">
+            <div class="main-wrapper">
+
+                <h1 class="title">Популярні інетрактивні ігри</h1>
+
+                <hr class="line">
+
+                <div class="number-game">
+                    <h2 class="second-title">Перевір в який рік ти народився</h2>
+
+                    <div class="number-game-wrapper">
+                        <div class="input-wrapper">
+                            <input type="number" class="h-text input" placeholder="Введіть рік народження">
+                            <i class="fa-search"></i>
+                        </div>
+                        <p class="h-text">Введіть рік народження, щоб побачити</p>
+                    </div>
+
+                    <hr class="line">
+                </div>
+                
+                <div class="number-game">
+                    <h2 class="second-title">Вгадай число, яке загадав комп’ютер</h2>
+                    
+                    <div class="number-game-wrapper">
+                        <div class="number-input-wrapper">
+                            <input type="number" class="h-text number-input" placeholder="Введіть число">
+                            <i class="fa-search"></i>
+                        </div>
+                        <p class="h-text">Введіть число, щоб побачити</p>
+                    </div>
+                    
+                    <hr class="line">
+                </div>
+
+                <div class="game">
+                    <h2 class="second-title">Камінь - ножиці - папір</h2>
+                
+                    <div class="icons-scores">
+                        <div class="icons">
+
+                            <div class="icon-wrapper">
+                                <img src="./images/stone.png" alt="stone" class="img" id="stone">
+                            </div>
+
+                            <div class="icon-wrapper">
+                                <img src="./images/scissors.png" alt="scissors" class="img" id="scissors">
+                            </div>
+                            
+                            <div class="icon-wrapper">
+                                <img src="./images/paper.png" alt="paper" class="img" id="paper">
+                            </div>
+                            
+                        </div>
+
+                        <div class="scores">
+                            <p class="h-text">Рахунок:</p>
+                            <p id="computer" class="h-text">Комп’ютер - </p>
+                            <p id="you" class="h-text">Ви - </p>
+                        </div>
+                    </div>
+
+                    <p class="h-text" id="result">...</p>
+
+                    <input type="button" value="Варіант комп’ютера" class="btn h-text">
+
+                    <hr class="line">
+                </div>
+
+                <div class="calculator">
+                    <h2 class="second-title">Калькулятор</h2>
+                    
+                    <div class="math">
+                        <input type="number" name="number" id="first-num" class="input" placeholder="Введіть число">
+                        
+                        <div class="signs">
+                            <div class="sign-wrapper">
+                                <p id="pluss" class="sign h-text">+</p>
+                            </div>
+
+                            <div class="sign-wrapper">
+                                <p id="multiplication" class="sign h-text">*</p>
+                            </div>
+
+                            <div class="sign-wrapper">
+                                <p id="minus" class="sign h-text">-</p>
+                            </div>
+
+                            <div class="sign-wrapper">
+                                <p id="division" class="sign h-text">/</p>
+                            </div>
+
+                        </div>
+                        
+                        <input type="number" name="number" id="second-num" class="input" placeholder="Введіть число">
+                        
+                        <div class="sign-wrapper">
+                            <p id="equality" class="sign h-text">=</p>
+                        </div>
+                        
+                        <input type="number" name="number" id="result" class="input" placeholder="Результат">
+                    </div>
+                    
+                    <hr class="line">
+                </div>
+            
+            </div>
+        </main>
+    </div>
+        
+        <footer>
+        </footer>
+</body>
+</html>

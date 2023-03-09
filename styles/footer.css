@@ -1,0 +1,70 @@
+.footer {
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-wrapper {
+    background-color: var(--white);
+    width: 1090px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.logo-foot {
+    align-self: center;
+}
+
+.our-contacts {
+    width: 207px;
+}
+
+.app, .app-link {
+    font-family: var(--montserrat);
+    font-weight: 400;
+    line-height: 1.7;
+    font-size: 12px;
+    font-style: normal;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.subscribe-section {
+    display: flex;
+    flex-direction: column;
+    width: 347px;
+}
+
+.subscribe-wrapper {
+    width: 347px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+#inp-email {
+    width: 204px;
+}
+
+#subscribe {
+    width: 107px;
+    color: var(--white);
+}
+
+.subscribe-text {
+    font-family: var(--montserrat);
+    font-weight: 400;
+    line-height: 1.22;
+    font-size: 7px;
+    color: var(--black);
+}
+
+.header-wrapper {
+    background-color: var(--white);
+    width: 1090px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

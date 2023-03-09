@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -199,7 +200,69 @@
                 
                     <hr class="line">
                 </div>
-            
+
+                <div class="about-me">
+                    <h2 class="second-title">Про мене</h2>
+                
+                    <div class="slider-container">
+                        <img src="./images/left-arrow.png" alt="left-arrow" class="arrow-left">
+                        
+                        <!-- .slider-track - лента с фотографиями -->
+                        <div class="slider-track">
+                            <div class="slider-item">
+                                <img src="https://ru.js.cx/carousel/1.png" alt="photo" class="photo">
+                                <h3 class="name h-text">Кошовенко Анастасія</h3>
+                                <p class="description h-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            </div>
+                            <div class="slider-item">
+                                <img src="https://ru.js.cx/carousel/2.png" alt="photo" class="photo">
+                                <h3 class="name h-text">Кошовенко Анастасія</h3>
+                                <p class="description h-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            </div>
+                            <div class="slider-item">
+                                <img src="https://ru.js.cx/carousel/3.png" alt="photo" class="photo">
+                                <h3 class="name h-text">Кошовенко Анастасія</h3>
+                                <p class="description h-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            </div>
+
+                        <img src="./images/right-arrow.png" alt="left-arrow" class="arrow-right">
+                        </div>
+                    </div>
+                                
+                    <hr class="line">
+                </div>
+
+                <div class="scientists">
+                    <h2 class="second-title">Обери вченого/их</h2>
+                    
+                    <div class="scientists-photos">
+                        <div class="scientist-photo"></div>
+                        <div class="scientist-photo"></div>
+                        <div class="scientist-photo"></div>
+                        <div class="scientist-photo"></div>
+                        <div class="scientist-photo"></div>
+                        <div class="scientist-photo"></div>
+                        <div class="scientist-photo"></div>
+                        <div class="scientist-photo"></div>
+                        <div class="scientist-photo"></div>
+                        <div class="scientist-photo"></div>
+                        <div class="scientist-photo"></div>
+                        <div class="scientist-photo"></div>
+                    </div>
+
+                    <div class="scientists-buttons">
+                        <button id="scientist-button1" class="scientist-button h-text button">Які вчені народилися в 19 ст.</button>
+                        <button id="scientist-button2" class="scientist-button h-text button">Знайти рік народження Albert Einshtein</button>
+                        <button id="scientist-button3" class="scientist-button h-text button">Відсортувати вчених за алфавітом</button>
+                        <button id="scientist-button4" class="scientist-button h-text button">Знайти вчених, прізвища яких починаються на на літеру “С”</button>
+                        <button id="scientist-button5" class="scientist-button h-text button">Відсортувати вчених за кількістю прожитих років</button>
+                        <button id="scientist-button6" class="scientist-button h-text button">Видалити всіх вчених, ім’я яких починається на “А”</button>
+                        <button id="scientist-button7" class="scientist-button h-text button">Знайти вченого, який народився найпізніше</button>
+                        <button id="scientist-button8" class="scientist-button h-text button">Знайти вченого, який прожив найдовше i вченого, який прожив найменше</button>
+                        <button id="scientist-button9" class="scientist-button h-text button">Знайти вчених, в яких співпадають перші літери імені i прізвища</button>
+                    </div>
+                </div>
+
             </div>
         </main>
     </div>
@@ -254,7 +317,7 @@
         <!-- <script src="./js/task6.js"></script> -->
         <!-- <script src="./js/task7.js"></script> -->
         <script src="./js/task8.js"></script>
-        <!-- <script src="./js/task9.js"></script> -->
+        <script src="./js/task9.js"></script>
         <!-- <script src="./js/task10.js"></script> -->
 </body>
 </html>

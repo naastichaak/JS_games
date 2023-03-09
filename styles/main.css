@@ -148,7 +148,7 @@
     margin: 36px 0px;
 }
 
-.btn {
+.button {
     width: 182px;
     height: 35px;
     background-color: var(--black);
@@ -193,15 +193,12 @@
 
 .sign-wrapper {
     background-color: var(--black);
-    /* color: var(--white); */
     border-radius: 20px;
     width: 25px;
     height: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* text-align: center; */
-    /* vertical-align: middle; */
 }
 
 .sign {
@@ -217,4 +214,57 @@
 #result {
     width: 118px;
     text-align: center;
+}
+
+/* time-calculator */
+.time-calculator{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* dino */
+.dino{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dino-canvas{
+    margin-top: 36px;
+}
+
+/* football */
+.football {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.football-canvas{
+    margin-top: 36px;
+}
+
+/* three-numbers */
+.three-numbers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.three-numbers-wrapper{
+    width: 481px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#num1, #num2, #num3{
+    text-align: center;
+    width: 135px;
+    margin-top: 36px;
+}
+
+#biggest-num{
+    margin-top: 36px;
+    cursor: pointer;
 }

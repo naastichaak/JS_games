@@ -110,7 +110,7 @@
 
                     <p class="h-text" id="result">...</p>
 
-                    <input type="button" value="Варіант комп’ютера" class="btn h-text">
+                    <input type="button" value="Варіант комп’ютера" class="button h-text">
 
                     <hr class="line">
                 </div>
@@ -123,19 +123,19 @@
                         
                         <div class="signs">
                             <div class="sign-wrapper">
-                                <p id="pluss" class="sign h-text">+</p>
+                                <p id="pluss" class="btn sign h-text">+</p>
                             </div>
 
                             <div class="sign-wrapper">
-                                <p id="multiplication" class="sign h-text">*</p>
+                                <p id="multiplication" class="btn sign h-text">*</p>
                             </div>
 
                             <div class="sign-wrapper">
-                                <p id="minus" class="sign h-text">-</p>
+                                <p id="minus" class="btn sign h-text">-</p>
                             </div>
 
                             <div class="sign-wrapper">
-                                <p id="division" class="sign h-text">/</p>
+                                <p id="division" class="btn sign h-text">/</p>
                             </div>
 
                         </div>
@@ -143,12 +143,60 @@
                         <input type="number" name="number" id="second-num" class="input" placeholder="Введіть число">
                         
                         <div class="sign-wrapper">
-                            <p id="equality" class="sign h-text">=</p>
+                            <p id="equal" class="sign h-text">=</p>
                         </div>
                         
                         <input type="number" name="number" id="result" class="input" placeholder="Результат">
                     </div>
                     
+                    <hr class="line">
+                </div>
+
+                <div class="time-calculator">
+                    <h2 class="second-title">Калькулятор часу</h2>
+                    
+                    <div class="number-game-wrapper">
+                        <div class="number-input-wrapper">
+                            <input type="number" class="h-text number-input" placeholder="Введіть число">
+                            <i class="fa-search"></i>
+                        </div>
+                        <p class="h-text">3 дн. 15:45:01</p>
+                    </div>
+                    
+                    <hr class="line">
+                </div>
+
+                <div class="dino">
+                    <h2 class="second-title">Google динозавр</h2>
+
+                    <img src="./images/dino.svg" alt="dino" class="dino-canvas">
+                    <!-- <canvas id="dino" class="dino-canvas"></canvas> -->
+
+                    <hr class="line">
+                </div>
+
+                <div class="football">
+                    <h2 class="second-title">Футбол</h2>
+                
+                    <img src="./images/football.svg" alt="fild" class="football-canvas">
+                    <!-- <canvas id="football" class="football-canvas"></canvas> -->
+                
+                    <hr class="line">
+                </div>
+
+                <div class="three-numbers">
+                    <h2 class="second-title">Введіть 3 числа</h2>
+
+                    <div class="three-numbers-wrapper">
+                        <input type="number" class="input" id="num1" placeholder="Введіть число">
+                        
+                        <input type="number" class="input" id="num2" placeholder="Введіть число">
+                        
+                        <input type="number" class="input" id="num3" placeholder="Введіть число">
+                    </div>
+
+                    <p class="h-text" id="biggest-num">Найбільше число, яке ви ввели - </p>
+                
                     <hr class="line">
                 </div>
             
@@ -163,5 +211,9 @@
 
         <script src="./js/task1.js"></script>
         <script src="./js/task2.js"></script>
+        <script src="./js/task3.js"></script>
+        <script src="./js/task4.js"></script>
+
+        <script src="./js/task8.js"></script>
 </body>
 </html>

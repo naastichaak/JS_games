@@ -66,6 +66,7 @@
 }
 
 .fa-search {
+    cursor: pointer;
     background: url(../images/loop.svg) no-repeat;
 }
 
@@ -149,6 +150,7 @@
 }
 
 .button {
+    cursor: pointer;
     width: 182px;
     height: 35px;
     background-color: var(--black);
@@ -203,6 +205,7 @@
 
 .sign {
     color: var(--white);
+    cursor: pointer;
 }
 
 #first-num,

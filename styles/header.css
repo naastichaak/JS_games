@@ -12,6 +12,10 @@
     align-items: center;
 }
 
+.choose {
+    cursor: pointer;
+}
+
 .choose,
 .h-text {
     border: 0;

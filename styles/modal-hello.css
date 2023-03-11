@@ -1,0 +1,62 @@
+.user-section {
+    position: absolute;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 576px;
+    height: 316px;
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    border-radius: 20px;
+
+    background-image: url(../images/sword.png), url(../images/puzzle.png), url(../images/game.png), url(../images/tic-tac-toe.png);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: left top, left top, left top, left top;
+    background-position: 41px 155px, 85px 230px, 505px 155px, 416px 230px;
+}
+.section-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#close {
+    cursor: pointer;
+    align-self: flex-end;
+    margin-right: 30px;
+}
+
+.section-text {
+    font-family: var(--inter);
+    width: 392px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 42px;
+}
+
+.section-user-name {
+    font-family: var(--inter);
+    margin-bottom: 18px;
+}
+
+#section-input {
+    margin-bottom: 18px;
+    width: 170px;
+}
+
+#section-button {
+    width: 105px;
+    transition: all 300ms ease-in-out;
+    border: 2px solid var(--black);
+}
+
+#section-button:hover {
+    color: var(--black);
+    background-color: var(--white);
+}

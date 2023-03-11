@@ -1,4 +1,5 @@
-body.dark {
+body.dark,
+body.dark .user-section {
     background-color: #151823;
 }
 
@@ -16,7 +17,8 @@ body.dark option {
     color: #fff;
 }
 
-body.dark hr {
+body.dark hr,
+body.dark .user-section {
     border-color: #fff;
 }
 

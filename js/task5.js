@@ -8,7 +8,7 @@ timeCalculator.addEventListener("click", () => {
     mins = mins % (60 * 24);
     let hours = Math.floor(mins / 60);
     if (hours < 10) {
-        hours = "0" + mins;
+        hours = "0" + hours;
     }
     mins = mins % 60;
     if (mins < 10) {

@@ -1,0 +1,43 @@
+.footer-section {
+    position: absolute;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 463px;
+    height: 245px;
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-end;
+
+    background-image: url(../images/sword.png), url(../images/puzzle.png), url(../images/game.png), url(../images/tic-tac-toe.png);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: left top, left top, left top, left top;
+    background-position: 43px 69px, 87px 145px, 391px 69px, 347px 145px;
+    display: none;
+    /* display: contents; */
+}
+
+.footer-section-wrapper {
+    margin-top: 30px;
+    margin-right: 30px;
+    width: 380px;
+    height: 132px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#close-subscribe {
+    width: 15px;
+    align-self: flex-end;
+}
+
+
+.footer-section-text {
+    font-size: 20px;
+    margin-top: 40px;
+}

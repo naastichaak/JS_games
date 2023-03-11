@@ -3,7 +3,7 @@ let userName = document.querySelector("#user")
 
 // from modal
 let modalSection = document.querySelector(".user-section")
-let closeBtn = document.querySelector("#close");   //done
+let closeBtn = document.querySelector("#close");
 let sectionInput = document.querySelector("#section-input");
 let sectionButton = document.querySelector("#section-button");
 

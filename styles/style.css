@@ -13,6 +13,11 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
 .back-wrapper {
     background: url("../images/back.png") center top / 1540px no-repeat;
 }

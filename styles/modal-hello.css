@@ -55,8 +55,3 @@
     transition: all 300ms ease-in-out;
     border: 2px solid var(--black);
 }
-
-#section-button:hover {
-    color: var(--black);
-    background-color: var(--white);
-}

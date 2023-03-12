@@ -9,10 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat+Alternates&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="header-wrapper">
 
             <a href="#" class="logo">
@@ -21,15 +21,15 @@
 
             <nav class="nav">
                 <select id="choose" name="choose" class="choose">
-                    <option value="1" class="nav-item">Інтерактив</option>
-                    <option value="2" class="nav-item">Числовий</option>
-                    <option value="3" class="nav-item">Ігровий</option>
-                    <option value="4" class="nav-item">Ознайомчий</option>
+                    <option id="option1" value="1" class="nav-item">Інтерактив</option>
+                    <option id="option2" value="2" class="nav-item">Числовий</option>
+                    <option id="option3" value="3" class="nav-item">Ігровий</option>
+                    <option id="option4" value="4" class="nav-item">Ознайомчий</option>
                 </select>
 
-                <h3 id="about" class="h-text">Про мене</h3>
+                <h3 id="about" class="h-text"><a href="#about-me" class="h-text">Про мене</a></h3>
 
-                <h3 id="contacts" class="h-text">Контакти</h3>
+                <h3 id="contacts" class="h-text"><a href="#footer" class="h-text">Контакти</a></h3>
             </nav>
 
             <div class="dark-mode">
@@ -59,7 +59,7 @@
                             Бажаємо Вам гарно провести час!
                         </p>
                         <h3 class="section-user-name h-text">Введіть своє ім’я:</h3>
-                        <input type="text" placeholder="Ваше ім’я..." id="section-input" class="input h-text">
+                        <input type="text" placeholder="Ваше ім’я..." id="section-input" class="input h-text" autocomplete="off">
                         <input type="button" value="Зберегти" class="button h-text" id="section-button">
                     </div>
                 </section>
@@ -68,7 +68,7 @@
 
                 <hr class="line">
 
-                <div class="number-game">
+                <div class="number-game" id="birthYearGame">
                     <h2 class="second-title">Перевір в який рік ти народився</h2>
 
                     <div class="number-game-wrapper">
@@ -82,7 +82,7 @@
                     <hr class="line">
                 </div>
                 
-                <div class="number-game">
+                <div class="number-game" id="gessTheNumberGame">
                     <h2 class="second-title">Вгадай число, яке загадав комп’ютер до 10</h2>
                     
                     <div class="number-game-wrapper">
@@ -96,41 +96,41 @@
                     <hr class="line">
                 </div>
 
-                <div class="game">
+                <div class="game" id="rockScissorsPaperGame">
                     <h2 class="second-title">Камінь - ножиці - папір</h2>
                 
                     <div class="icons-scores">
                         <div class="icons">
 
-                            <div class="icon-wrapper">
-                                <img src="./images/stone.png" alt="stone" class="img" id="stone">
+                            <div class="icon-wrapper" id="stone">
+                                <img src="./images/stone.png" alt="stone" class="img">
                             </div>
 
-                            <div class="icon-wrapper">
-                                <img src="./images/scissors.png" alt="scissors" class="img" id="scissors">
+                            <div class="icon-wrapper" id="scissors">
+                                <img src="./images/scissors.png" alt="scissors" class="img">
                             </div>
                             
-                            <div class="icon-wrapper">
-                                <img src="./images/paper.png" alt="paper" class="img" id="paper">
+                            <div class="icon-wrapper" id="paper">
+                                <img src="./images/paper.png" alt="paper" class="img">
                             </div>
                             
                         </div>
 
                         <div class="scores">
                             <p class="h-text">Рахунок:</p>
-                            <p id="computer" class="h-text">Комп’ютер - </p>
-                            <p id="you" class="h-text">Ви - </p>
+                            <p class="h-text">Комп’ютер - <span id="computer"></span></p>
+                            <p class="h-text">Ви - <span id="you"></span></p>
                         </div>
                     </div>
 
-                    <p class="h-text" id="result">...</p>
+                    <p class="h-text" id="ticTacToeResult">...</p>
 
-                    <input type="button" value="Варіант комп’ютера" class="button h-text">
+                    <input id="computerTurn" type="button" value="Варіант комп’ютера" class="button h-text">
 
                     <hr class="line">
                 </div>
 
-                <div class="calculator">
+                <div class="calculator" id="calculatorGame">
                     <h2 class="second-title">Калькулятор</h2>
                     
                     <div class="math">
@@ -167,7 +167,7 @@
                     <hr class="line">
                 </div>
 
-                <div class="time-calculator">
+                <div class="time-calculator" id="timeCalculatorGame">
                     <h2 class="second-title">Калькулятор часу</h2>
                     
                     <div class="number-game-wrapper">
@@ -199,7 +199,7 @@
                     <hr class="line">
                 </div>
 
-                <div class="three-numbers">
+                <div class="three-numbers" id="threeNumberGame">
                     <h2 class="second-title">Введіть 3 числа</h2>
 
                     <div class="three-numbers-wrapper">
@@ -215,7 +215,7 @@
                     <hr class="line">
                 </div>
 
-                <div class="about-me">
+                <div class="about-me" id="about-me">
                     <h2 class="second-title">Про мене</h2>
                 
                     <div class="slider-container">
@@ -246,7 +246,7 @@
                     <hr class="line">
                 </div>
 
-                <div class="scientists">
+                <div class="scientists" id="scientistsGame">
                     <h2 class="second-title">Обери вченого/их</h2>
                     
                     <div class="scientists-photos">
@@ -281,10 +281,10 @@
         </main>
     </div>
         
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="footer-wrapper">
 
-            <a href="#" class="logo-foot">
+            <a href="#header" class="logo-foot">
                 <img src="./images/logo-footer.png" alt="logo">
             </a>
 
@@ -331,15 +331,16 @@
 
         <script src="./js/header.js"></script>
         <script src="./js/modal.js"></script>
+        <script src="./js/options.js"></script>
         <script src="./js/task1.js"></script>
         <script src="./js/task2.js"></script>
-        <!-- <script src="./js/task3.js"></script> -->
+        <script src="./js/task3.js"></script>
         <script src="./js/task4.js"></script>
         <script src="./js/task5.js"></script>
         <!-- <script src="./js/task6.js"></script> -->
         <!-- <script src="./js/task7.js"></script> -->
         <script src="./js/task8.js"></script>
-        <script src="./js/task9.js"></script>
+        <!-- <script src="./js/task9.js"></script> -->
         <!-- <script src="./js/task10.js"></script> -->
         <script src="./js/modal-subscribe.js"></script>
 </body>

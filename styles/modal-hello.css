@@ -37,7 +37,14 @@
     width: 392px;
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 42px;
+}
+
+.section-second-text {
+    font-family: var(--inter);
+    width: 300px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 32px;
 }
 
 .section-user-name {

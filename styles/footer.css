@@ -7,7 +7,7 @@
 
 .footer-wrapper {
     background-color: var(--white);
-    max-width: 1090px;
+    width: 1090px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;

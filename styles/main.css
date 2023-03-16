@@ -5,7 +5,7 @@
 
 .main-wrapper {
     background-color: var(--white);
-    max-width: 1090px;
+    width: 1090px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -248,6 +248,11 @@
 
 .football-canvas{
     margin-top: 36px;
+    width: 720px;
+    height: 220px;
+    background-color: var(--fild);
+    border: 2px solid var(--black);
+    border-radius: 20px;
 }
 
 /* three-numbers */

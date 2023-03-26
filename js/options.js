@@ -1,22 +1,40 @@
-// select's items
-let option1 = document.querySelector("#option1");
-let option2 = document.querySelector("#option2");
-let option3 = document.querySelector("#option3");
-let option4 = document.querySelector("#option4");
-
 // all games
 let birthYearGame = document.querySelector("#birthYearGame");
 let gessTheNumberGame = document.querySelector("#gessTheNumberGame");
 let rockScissorsPaperGame = document.querySelector("#rockScissorsPaperGame");
-let calculatorGame = document.querySelector("#calculator");
-let timeCalculatorGame = document.querySelector("#timeCalculator");
+let calculatorGame = document.querySelector("#calculatorGame");
+let timeCalculatorGame = document.querySelector("#timeCalculatorGame");
 let dino = document.querySelector(".dino");
 let football = document.querySelector(".football");
 let threeNumberGame = document.querySelector("#threeNumberGame");
 let aboutMe = document.querySelector("#about-me");
 let scientistsGame = document.querySelector("#scientistsGame");
 
-const interactive = () => {
+let choose = document.querySelector("#choose");
+
+choose.addEventListener("change", function () {
+    console.log(choose.selectedIndex);
+
+    switch (choose.selectedIndex) {
+        case 1:
+            numeric();
+            break;
+        case 2:
+            gaming();
+            break;
+        case 3:
+            introductory();
+            break;
+        case 0:
+            interactive();
+            break;
+    
+        default:
+            break;
+    }
+});
+
+function interactive() {
     birthYearGame.style.display = "flex";
     gessTheNumberGame.style.display = "flex";
     calculatorGame.style.display = "flex";
@@ -29,8 +47,7 @@ const interactive = () => {
     scientistsGame.style.display = "flex";
 };
 
-const numeric = () => {
-    console.log("hi");
+function numeric() {
     rockScissorsPaperGame.style.display = "none";
     dino.style.display = "none";
     football.style.display = "none";
@@ -44,7 +61,7 @@ const numeric = () => {
     threeNumberGame.style.display = "flex";
 };
 
-const gaming = () => {
+function gaming() {
     birthYearGame.style.display = "none";
     gessTheNumberGame.style.display = "none";
     calculatorGame.style.display = "none";
@@ -58,9 +75,7 @@ const gaming = () => {
     football.style.display = "flex";
 };
 
-const introductory = () => {
-    aboutMe.style.display = "flex";
-
+function introductory() {
     birthYearGame.style.display = "none";
     gessTheNumberGame.style.display = "none";
     calculatorGame.style.display = "none";
@@ -71,9 +86,6 @@ const introductory = () => {
     rockScissorsPaperGame.style.display = "none";
     dino.style.display = "none";
     football.style.display = "none";
-};
 
-option1.addEventListener("select", interactive);
-option2.addEventListener("click", numeric);
-option3.addEventListener("select", gaming);
-option4.addEventListener("select", introductory);
+    aboutMe.style.display = "flex";
+};

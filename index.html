@@ -50,7 +50,7 @@
         <main class="main">
             <div class="main-wrapper">
 
-                <section class="user-section">
+                <!-- <section class="user-section">
                     <img src="./images/close.png" alt="close" id="close">
                     <div class="section-wrapper">
                         <p class="section-text h-text">Привіт!
@@ -65,7 +65,7 @@
                         <input type="text" placeholder="Ваше ім’я..." id="section-input" class="input h-text" autocomplete="off">
                         <input type="button" value="Зберегти" class="button h-text" id="section-button">
                     </div>
-                </section>
+                </section> -->
 
                 <h1 class="title">Популярні інетрактивні ігри</h1>
 
@@ -90,7 +90,7 @@
                     
                     <div class="number-game-wrapper">
                         <div class="number-input-wrapper">
-                            <input type="number" class="h-text number-input" id="number-input" placeholder="Введіть число">
+                            <input type="number" class="h-text number-input short-input" id="number-input" placeholder="Введіть число">
                             <i class="fa-search" id="number-search"></i>
                         </div>
                         <p class="h-text" id="number-text">Введіть число, щоб побачити</p>
@@ -175,7 +175,7 @@
                     
                     <div class="number-game-wrapper">
                         <div class="number-input-wrapper">
-                            <input id="time-calculator-input" type="number" class="h-text number-input" placeholder="Введіть число">
+                            <input id="time-calculator-input" type="number" class="h-text number-input short-input" placeholder="Введіть число">
                             <i class="fa-search" id="time-calculator-search"></i>
                         </div>
                         <p class="h-text" id="answer-time-calculator">0 дн. 00:00:00</p>
@@ -187,8 +187,8 @@
                 <div class="dino">
                     <h2 class="second-title">Google динозавр</h2>
 
-                    <img src="./images/dino.svg" alt="dino" class="dino-canvas">
-                    <!-- <canvas id="dino" class="dino-canvas"></canvas> -->
+                    <!-- <img src="./images/dino.svg" alt="dino" class="dino-canvas"> -->
+                    <canvas id="dino-canvas" class="dino-canvas"></canvas>
 
                     <hr class="line">
                 </div>
@@ -221,27 +221,27 @@
                     <h2 class="second-title">Про мене</h2>
                 
                     <div class="slider-container">
-                        <img src="./images/left-arrow.png" alt="left-arrow" class="arrow-left">
-                        
                         <!-- .slider-track - лента с фотографиями -->
                         <div class="slider-track">
+                            <img src="./images/left-arrow.png" alt="left-arrow arrows" class="arrow-left">
+
                             <div class="slider-item">
                                 <img src="https://ru.js.cx/carousel/1.png" alt="photo" class="photo">
-                                <h3 class="name h-text">Кошовенко Анастасія</h3>
-                                <p class="description h-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                <h3 class="myName h-text">Кошовенко Анастасія</h3>
+                                <p class="myDescription h-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                             </div>
                             <div class="slider-item">
                                 <img src="https://ru.js.cx/carousel/2.png" alt="photo" class="photo">
-                                <h3 class="name h-text">Кошовенко Анастасія</h3>
-                                <p class="description h-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                <h3 class="myName h-text">Кошовенко Анастасія</h3>
+                                <p class="myDescription h-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                             </div>
                             <div class="slider-item">
                                 <img src="https://ru.js.cx/carousel/3.png" alt="photo" class="photo">
-                                <h3 class="name h-text">Кошовенко Анастасія</h3>
-                                <p class="description h-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                <h3 class="myName h-text">Кошовенко Анастасія</h3>
+                                <p class="myDescription h-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                             </div>
 
-                        <img src="./images/right-arrow.png" alt="left-arrow" class="arrow-right">
+                        <img src="./images/right-arrow.png" alt="left-arrow arrows" class="arrow-right">
                         </div>
                     </div>
                                 
@@ -339,7 +339,7 @@
         <script src="./js/task3.js"></script>
         <script src="./js/task4.js"></script>
         <script src="./js/task5.js"></script>
-        <!-- <script src="./js/task6.js"></script> -->
+        <script src="./js/task6.js"></script>
         <script src="./js/task7.js"></script>
         <script src="./js/task8.js"></script>
         <!-- <script src="./js/task9.js"></script> -->

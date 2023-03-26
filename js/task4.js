@@ -8,29 +8,42 @@ let btnMinus = document.querySelector("#minus");
 let btnDivision = document.querySelector("#division");
 
 let equal = document.querySelector("#equal");
+let answer;
 
 const pluss = () => {
-    result.value = +firstNum.value + +secondNum.value;
-    console.log(result.value);
+    answer = '+';
 };
 
 const multiplication = () => {
-    result.value = +firstNum.value * +secondNum.value;
-    console.log(result.value);
+    answer = '*';
 };
 
 const minus = () => {
-    result.value = +firstNum.value - +secondNum.value;
-    console.log(result.value);
+    answer = '-';
 };
 
 const division = () => {
-    result.value = +firstNum.value / +secondNum.value;
-    console.log(result.value);
+    answer = '/';
 };
 
-const answer = () => {
-    console.log(result.value);
+const answerBtn = () => {
+    switch (answer) {
+        case "+":
+            result.value = +firstNum.value + +secondNum.value;
+            break;
+        case "*":
+            result.value = +firstNum.value * +secondNum.value;
+            break;
+        case "-":
+            result.value = +firstNum.value - +secondNum.value;
+            break;
+        case "/":
+            result.value = +firstNum.value / +secondNum.value;
+            break;
+    
+        default:
+            break;
+    }
 };
 
 btnPluss.addEventListener("click", pluss);
@@ -38,4 +51,4 @@ btnMultiplication.addEventListener("click", multiplication);
 btnMinus.addEventListener("click", minus);
 btnDivision.addEventListener("click", division);
 
-equal.addEventListener("click", answer);
+equal.addEventListener("click", answerBtn);

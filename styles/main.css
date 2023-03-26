@@ -1,3 +1,7 @@
+/* .back-wrapper {
+    height: 3240px;
+} */
+
 .main {
     display: flex;
     justify-content: center;
@@ -235,8 +239,13 @@
     align-items: center;
 }
 
+.google-dino-game{
+    margin-top: 36px;
+}
+
 .dino-canvas{
     margin-top: 36px;
+    border: 1px solid black;
 }
 
 /* football */
@@ -276,6 +285,58 @@
 
 #biggest-num{
     margin-top: 36px;
+    cursor: pointer;
+}
+
+/* about-me */
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider-container {
+    margin-top: 36px;
+}
+
+.slider-track {
+    /* width: 906px; */
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-item {
+    width: 500px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.slider-item:nth-of-type(1){
+    display: none;
+    position: absolute;
+}
+
+.slider-item:nth-of-type(3) {
+    display: none;
+    position: absolute;
+}
+
+.myName {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.myDescription {
+    text-align: center;
+}
+
+.arrows {
     cursor: pointer;
 }
 
@@ -363,4 +424,9 @@
 
 #scientist-button9 {
     width: 489px;
+}
+
+.short-input {
+    padding: 0;
+    padding-left: 10px;
 }

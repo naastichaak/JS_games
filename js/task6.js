@@ -49,9 +49,12 @@ function draw() {
         }
 
         if (yPos + character.height >= barrier[i].y + 139 &&
-            xPos + character.width >= barrier[i].x) {
+            xPos + character.width - 35 >= barrier[i].x &&
+            xPos <= barrier[i].x + cactus.width
+        ) {
             location.reload();
         }
+
     }
 }
 
@@ -81,7 +84,7 @@ function jumpDino() {
         yPos -= 5;
     }
 
-    if (yPos <= 25) {
+    if (yPos <= 10) {
         isUp = true;
         clickDino = false;
     }

@@ -52,7 +52,7 @@ function draw() {
             xPos + character.width - 35 >= barrier[i].x &&
             xPos <= barrier[i].x + cactus.width
         ) {
-            location.reload();
+            reloadDino();
         }
 
     }
@@ -63,11 +63,7 @@ let clickDino = false;
 dinoCanvas.addEventListener("click", moveUp);
 
 function moveUp() {
-    // yPos -= 70;
     clickDino = true;
-    // if (yPos > 0) {
-    //     velY = -4;
-    // }
 }
 
 setInterval(draw, 20);
@@ -93,4 +89,21 @@ function jumpDino() {
         velY += gravity;
         yPos += velY;
     }
+}
+
+function reloadDino() {
+    xPos = 50;
+    yPos = 100;
+
+    barrier = [];
+    barrier[0] = {
+        x: dinoCanvas.width,
+        y: 0,
+    };
+
+    velY = 0;
+
+    isUp = false;
+
+    clickDino = false;
 }

@@ -8,7 +8,7 @@ let dino = document.querySelector(".dino");
 let football = document.querySelector(".football");
 let threeNumberGame = document.querySelector("#threeNumberGame");
 let aboutMe = document.querySelector("#about-me");
-let scientistsGame = document.querySelector("#scientistsGame");
+// let scientistsGame = document.querySelector("#scientistsGame");
 
 let choose = document.querySelector("#choose");
 
@@ -44,7 +44,7 @@ function interactive() {
     dino.style.display = "flex";
     football.style.display = "flex";
     aboutMe.style.display = "flex";
-    scientistsGame.style.display = "flex";
+    // scientistsGame.style.display = "flex";
 };
 
 function numeric() {
@@ -52,7 +52,7 @@ function numeric() {
     dino.style.display = "none";
     football.style.display = "none";
     aboutMe.style.display = "none";
-    scientistsGame.style.display = "none";
+    // scientistsGame.style.display = "none";
 
     birthYearGame.style.display = "flex";
     gessTheNumberGame.style.display = "flex";
@@ -69,7 +69,7 @@ function gaming() {
     threeNumberGame.style.display = "none";
     aboutMe.style.display = "none";
 
-    scientistsGame.style.display = "flex";
+    // scientistsGame.style.display = "flex";
     rockScissorsPaperGame.style.display = "flex";
     dino.style.display = "flex";
     football.style.display = "flex";
@@ -82,7 +82,7 @@ function introductory() {
     timeCalculatorGame.style.display = "none";
     threeNumberGame.style.display = "none";
     aboutMe.style.display = "none";
-    scientistsGame.style.display = "none";
+    // scientistsGame.style.display = "none";
     rockScissorsPaperGame.style.display = "none";
     dino.style.display = "none";
     football.style.display = "none";

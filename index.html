@@ -50,7 +50,7 @@
         <main class="main">
             <div class="main-wrapper">
 
-                <!-- <section class="user-section">
+                <section class="user-section">
                     <img src="./images/close.png" alt="close" id="close">
                     <div class="section-wrapper">
                         <p class="section-text h-text">Привіт!
@@ -65,7 +65,7 @@
                         <input type="text" placeholder="Ваше ім’я..." id="section-input" class="input h-text" autocomplete="off">
                         <input type="button" value="Зберегти" class="button h-text" id="section-button">
                     </div>
-                </section> -->
+                </section>
 
                 <h1 class="title">Популярні інетрактивні ігри</h1>
 
@@ -221,34 +221,36 @@
                     <h2 class="second-title">Про мене</h2>
                 
                     <div class="slider-container">
-                        <!-- .slider-track - лента с фотографиями -->
-                        <div class="slider-track">
-                            <img src="./images/left-arrow.png" alt="left-arrow arrows" class="arrow-left">
+                        <img src="./images/left-arrow.png" id="arrow-left" class="arrow left" height="100" >
 
-                            <div class="slider-item">
-                                <img src="https://ru.js.cx/carousel/1.png" alt="photo" class="photo">
-                                <h3 class="myName h-text">Кошовенко Анастасія</h3>
-                                <p class="myDescription h-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <div class="photo-slider">
+                            <div class="photo-slider-line">
+                                <img src="./images/djotto-stairs.jpg" alt="me" width="250" height="250" class="my-photo-img" data-slide="0">
+                                <img src="./images/near-office.jpg" alt="me" width="250" height="250" class="my-photo-img" data-slide="1">
+                                <img src="./images/andrii-spusk.jpg" alt="me" width="250" height="250" class="my-photo-img" data-slide="2">
+                                <img src="./images/kino.jpg" alt="me" width="250" height="250" class="my-photo-img" data-slide="3">
+                                <img src="./images/real-me.jpg" alt="me" width="250" height="250" class="my-photo-img" data-slide="4">
                             </div>
-                            <div class="slider-item">
-                                <img src="https://ru.js.cx/carousel/2.png" alt="photo" class="photo">
-                                <h3 class="myName h-text">Кошовенко Анастасія</h3>
-                                <p class="myDescription h-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                            </div>
-                            <div class="slider-item">
-                                <img src="https://ru.js.cx/carousel/3.png" alt="photo" class="photo">
-                                <h3 class="myName h-text">Кошовенко Анастасія</h3>
-                                <p class="myDescription h-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                            </div>
-
-                        <img src="./images/right-arrow.png" alt="left-arrow arrows" class="arrow-right">
                         </div>
+                    
+                        <img src="./images/right-arrow.png" id="arrow-right" class="arrow right" height="100">
                     </div>
-                                
+
+                    <h3 class="myName h-text">Кошовенко Анастасія</h3>
+                    <p class="myDescription h-text">Зробила всі ігри))</p>
+                             
+                    <ol class="list-of-indicators">
+                        <li class="ind-slider ind-slider-active" data-slide-to="0"></li>
+                        <li class="ind-slider" data-slide-to="1"></li>
+                        <li class="ind-slider" data-slide-to="2"></li>
+                        <li class="ind-slider" data-slide-to="3"></li>
+                        <li class="ind-slider" data-slide-to="4"></li>
+                    </ol>
+
                     <hr class="line">
                 </div>
 
-                <div class="scientists" id="scientistsGame">
+                <!-- <div class="scientists" id="scientistsGame">
                     <h2 class="second-title">Обери вченого/их</h2>
                     
                     <div class="scientists-photos">
@@ -277,7 +279,7 @@
                         <button id="scientist-button8" class="scientist-button h-text button">Знайти вченого, який прожив найдовше i вченого, який прожив найменше</button>
                         <button id="scientist-button9" class="scientist-button h-text button">Знайти вчених, в яких співпадають перші літери імені i прізвища</button>
                     </div>
-                </div>
+                </div> -->
 
             </div>
         </main>
@@ -342,8 +344,7 @@
         <script src="./js/task6.js"></script>
         <script src="./js/task7.js"></script>
         <script src="./js/task8.js"></script>
-        <!-- <script src="./js/task9.js"></script> -->
-        <!-- <script src="./js/task10.js"></script> -->
+        <script src="./js/task9.js"></script>
         <script src="./js/modal-subscribe.js"></script>
 </body>
 </html>

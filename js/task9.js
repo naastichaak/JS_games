@@ -10,7 +10,7 @@ let ind = 0;
 arrowR.addEventListener("click", function () {
     offset = offset + 250;
     ind++;
-    if (offset > 999) {
+    if (offset > 1000) {
         offset = 0;
         ind = 0;
     }
@@ -22,7 +22,7 @@ arrowL.addEventListener("click", function () {
     offset = offset - 250;
     ind--;
     if (offset < 0) {
-        offset = 999;
+        offset = 1000;
         ind = 4;
     }
     sliderLine.style.left = -offset + "px";

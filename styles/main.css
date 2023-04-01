@@ -342,7 +342,7 @@
     list-style: none;
     display: flex;
     margin-top: 20px;
-    width: 150px;
+    width: 180px;
     justify-content: space-between;
 }
 .ind-slider {
@@ -359,95 +359,6 @@
     background-color: var(--dark-grey);
     border: 3px;
 }
-
-
-
-/* scientists */
-.scientists {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 36px;
-}
-
-.scientists-photos {
-    margin-top: 36px;
-    width: 580px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.scientist-photo {
-    border-radius: 20px;
-    background-color: var(--light-grey);
-    margin-right: 59px;
-    margin-bottom: 36px;
-    width: 100px;
-    height: 100px;
-}
-
-.scientist-photo:nth-child(4n) {
-    margin-right: 0px;
-}
-
-.scientists-buttons {
-    width: 860px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-.scientist-button {
-    margin-top: 20px;
-}
-
-.scientist-button:nth-child(-n+2) {
-    margin-top: 0px;
-}
-
-.scientist-button:nth-child(2n) {
-    margin-left: 36px;
-}
-
-#scientist-button1 {
-    width: 227px;
-    margin-left: 50px;
-}
-
-#scientist-button2 {
-    width: 298px;
-}
-
-#scientist-button3 {
-    width: 282px;
-}
-
-#scientist-button4 {
-    width: 441px;
-}
-
-#scientist-button5 {
-    width: 380px;
-}
-
-#scientist-button6 {
-    width: 375px;
-}
-
-#scientist-button7 {
-    width: 329px;
-}
-
-#scientist-button8 {
-    width: 368px;
-    height: 50px;
-}
-
-#scientist-button9 {
-    width: 489px;
-}
-
 .short-input {
     padding: 0;
     padding-left: 10px;
